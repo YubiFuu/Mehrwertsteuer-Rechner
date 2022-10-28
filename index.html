@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Mehrwertsteuerrechner</title>
+    </head>
+    <body>
+        <main>
+            <h1>Mehrwertsteuer-Rechner</h1>
+            <section>
+                <form>
+                    <article>
+                        <p>Was soll berechnet werden?</p>
+                        <div>
+                            <input type="radio" name="was" id="mwst-auf" />
+                            <label for="mwst-auf"
+                                >Mehrwertsteuer aufschlagen (Netto zu
+                                Brutto)</label
+                            >
+                        </div>
+                        <div>
+                            <input type="radio" name="was" id="mwst-ab" />
+                            <label for="mwst-ab"
+                                >Mehrwertsteuer abziehen (Brutto zu
+                                Netto)</label
+                            >
+                        </div>
+                    </article>
+                    <article>
+                        <p>Mehrwertsteuersatz</p>
+
+                        <input type="radio" name="wie-viel" id="mwst-19" />
+                        <label for="mwst-19">19%</label>
+
+                        <input type="radio" name="wie-viel" id="mwst-7" />
+                        <label for="mwst-7">7%</label>
+                    </article>
+                    <article>
+                        <label for="input-num">
+                            <p> Nettobeitrag (Preis ohne Mehrwertsteuer) in Euro
+                            <span>*</p></span>
+                        </label>
+                        <input type="text" id="input-num" />
+                    </article>
+                    <button type="submit" onclick="calcSteuer(event)">
+                        Berechnen
+                    </button>
+                </form>
+                <h2>Ergebnis</h2>
+                <article>
+                    <p>Mehrwertsteuerbetrag</p>
+                    <h3>0</h3>
+                </article>
+                <article>
+                    <p class="brutto-o-netto">Brutto-/Nettobetrag</p>
+                    <h4>0</h4>
+                </article>
+            </section>
+        </main>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

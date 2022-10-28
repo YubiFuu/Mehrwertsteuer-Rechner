@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(../font/OpenSans-VariableFont.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: "OpenSans";
+}
+h1 {
+    margin: 10px 0;
+    font-weight: 600;
+}
+p,
+h2,
+h3,
+h4 {
+    padding: 5px 0;
+    font-size: 1.2rem;
+}
+h2 {
+    font-size: 1rem;
+    color: rgb(84, 153, 214);
+    padding-left: 5px;
+}
+div {
+    padding: 5px 0;
+}
+button[type="submit"] {
+    margin: 5px;
+    background-color: rgb(84, 153, 214);
+    color: white;
+    text-transform: uppercase;
+    font-family: "OpenSans";
+    border-radius: 5px;
+    padding: 3px 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+input[type="text"] {
+    width: 20%;
+    padding: 5px;
+    font-family: "OpenSans";
+    font-size: 1rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #fff(166, 166, 200);
+    border-radius: 5px;
+    border: 1px solid black;
+    gap: 5px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+span {
+    color: red;
+}
+article {
+    background-color: rgb(226, 233, 239);
+    padding: 5px 0;
+    padding-left: 5px;
+}
+article:first-of-type {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px 5px 0 0;
+}
+article:last-of-type {
+    border-radius: 0 0 5px 5px;
+}
