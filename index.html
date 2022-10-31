@@ -20,6 +20,7 @@
                                 name="was"
                                 id="mwst-auf"
                                 checked
+                                onchange="changeNettoBruttoTag()"
                             />
                             <label for="mwst-auf"
                                 >Mehrwertsteuer aufschlagen (Netto zu
@@ -27,7 +28,12 @@
                             >
                         </div>
                         <div>
-                            <input type="radio" name="was" id="mwst-ab" />
+                            <input
+                                type="radio"
+                                name="was"
+                                id="mwst-ab"
+                                onchange="changeNettoBruttoTag()"
+                            />
                             <label for="mwst-ab"
                                 >Mehrwertsteuer abziehen (Brutto zu
                                 Netto)</label
@@ -42,14 +48,20 @@
                             name="wie-viel"
                             id="mwst-19"
                             checked
+                            onchange="changeNettoBruttoTag()"
                         />
                         <label for="mwst-19">19%</label>
 
-                        <input type="radio" name="wie-viel" id="mwst-7" />
+                        <input
+                            type="radio"
+                            name="wie-viel"
+                            id="mwst-7"
+                            onchange="changeNettoBruttoTag()"
+                        />
                         <label for="mwst-7">7%</label>
                     </article>
                     <article>
-                        <label for="input-num">
+                        <label for="input-num" id="label-input">
                             <p>
                                 Nettobeitrag (Preis ohne Mehrwertsteuer) in Euro
                                 <span>*</span>
