@@ -15,7 +15,12 @@
                     <article>
                         <p>Was soll berechnet werden?</p>
                         <div>
-                            <input type="radio" name="was" id="mwst-auf" />
+                            <input
+                                type="radio"
+                                name="was"
+                                id="mwst-auf"
+                                checked
+                            />
                             <label for="mwst-auf"
                                 >Mehrwertsteuer aufschlagen (Netto zu
                                 Brutto)</label
@@ -32,7 +37,12 @@
                     <article>
                         <p>Mehrwertsteuersatz</p>
 
-                        <input type="radio" name="wie-viel" id="mwst-19" />
+                        <input
+                            type="radio"
+                            name="wie-viel"
+                            id="mwst-19"
+                            checked
+                        />
                         <label for="mwst-19">19%</label>
 
                         <input type="radio" name="wie-viel" id="mwst-7" />
@@ -40,8 +50,10 @@
                     </article>
                     <article>
                         <label for="input-num">
-                            <p> Nettobeitrag (Preis ohne Mehrwertsteuer) in Euro
-                            <span>*</p></span>
+                            <p>
+                                Nettobeitrag (Preis ohne Mehrwertsteuer) in Euro
+                                <span>*</span>
+                            </p>
                         </label>
                         <input type="text" id="input-num" />
                     </article>
